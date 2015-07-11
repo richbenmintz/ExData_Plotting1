@@ -29,7 +29,7 @@ createPlot4 <- function()
  
    g_range <- range(0, plotData$Voltage)
    
-   plot(as.numeric(plotData$Voltage) , type="l", axes=FALSE, xlab="", ylab="Voltage")
+   plot(as.numeric(plotData$Voltage) , type="l", axes=FALSE, xlab="datetime", ylab="Voltage")
    axis(1, at=1, lab=c("Thu"),  xlab="NULL")
    axis(1, at=nrow(plotData)/2, lab=c("Fri"),xlab="NULL")
    axis(1, at=nrow(plotData), lab=c("Sat"),xlab="NULL")
@@ -55,7 +55,7 @@ createPlot4 <- function()
    #plot 4
    g_range <- range(0.0, as.numeric(plotData$Global_reactive_power))
  
-   plot(as.numeric(plotData$Global_reactive_power) , type="l", axes=FALSE, xlab="", ylab="Global_reactive_power")
+   plot(as.numeric(plotData$Global_reactive_power) , type="l", axes=FALSE, xlab="datetime", ylab="Global_reactive_power")
    axis(1, at=1, lab=c("Thu"),  xlab="NULL")
    axis(1, at=nrow(plotData)/2, lab=c("Fri"),xlab="NULL")
    axis(1, at=nrow(plotData), lab=c("Sat"),xlab="NULL")
